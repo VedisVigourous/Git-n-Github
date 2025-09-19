@@ -1,0 +1,54 @@
+Git = local
+GitHub = remote directory 
+
+After installing 
+
+Configuring Git on a Terminal - 
+codes: 
+1. git config --global user.name "Git_accnt_username" :- connects to the username in GitHub
+2. git config --global user.email "Git_accnt_mail" :- To verify both username and email combo
+3. git config list - List the details of the configuration of the linked account
+
+Clone - clones a repository from GitHub to the local machine.
+
+Status - Shows how many updates and files are modified since made. (Tracks all the changes)
+
+--
+
+add - moves file to staging area
+commit - records the changes in file
+
+remove - code used is rm
+Imagine tracking a file which was not meant to be, rm helps them untrack again
+Syntax	~ git rm --cheched -r <File>
+
+use- ls or dir to show all the files within directory
+** To show hidden files we can use > ls -hidden and other attributes
+
+____________________________________
+
+Types of files in git 
+1. untracked - never committed before and hence git doesn't have idea about the content of the file.
+2. modified - committed earlier
+3. staged - ready to be committed
+4. unmodified - no changes observed
+
+____________________________________
+
+To see the changes made to a repo on GitHub - 
+just click the committed msg on - GitHub file 
+it will show you a history of all the commits.
+
+*****
+
+push command - 
+basic code - git push
+
+additionally we can use git push origin main
+
+~ Concept - 
+git works on - local repo
+GitHub on - remote repo
+
+So, the default remote repo is - ORIGIN
+             and the branch is - MAIN

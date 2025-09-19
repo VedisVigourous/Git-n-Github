@@ -1,0 +1,7 @@
+Fork - It is a practice of copying a repo - it completely copies the code and settings of a repo
+"It is a rough copy of a repo"
+
+Steps to do so:
+1. go to a repo
+2. click fork on the repo
+3. Use a desired name and click create fork.

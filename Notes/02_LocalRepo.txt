@@ -1,0 +1,42 @@
+We can not only make remote repos on GitHub but can also make, local repository using GIT
+
+go to a designated folder using cd commands (cd path - enter a repo and cd .. - to exit the current directory)
+
+- Now make a directory using 
+  Syntax - mkdir dir_name
+
+Init commands -
+
+1. Now to make the defined repo as git repo we use
+   Syntax - git init
+
+and then ... use git commit and add commands to save your work locally 
+
+______________________________________________________________________________________________________________________
+
+Pushing local repo to GitHub -
+
+1. connecting online GitHub repo to local
+	~ git remote add origin <link>
+
+2. To verify linked remote repo
+	~ git remote -v
+
+3. Branches in git repo provides the feature of different spaces and collaborative project, to check in which branch we are in
+	~ git branch
+
+4. To rename branches 
+	~ git branch -M <name>
+
+5. Pushing the codes to github now
+	~ git push origin <branch_name>
+
+Note: If you want to add a file to a same branch every time instead of writing git push origin main we can set a upstream
+	~ git push -u origin main
+
+** 6. If we want to add changes made in remote repo to local repo - pull command 
+		~ git pull origin <branch_name>
+______________________________________________________________________________________________________________________
+
+Mainly the workflow used is:
+

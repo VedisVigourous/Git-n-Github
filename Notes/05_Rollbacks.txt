@@ -1,0 +1,21 @@
+Undoing unnecessary changes made by mistake:
+
+Case 1: Staged branch - for those files which are added but not committed 
+A. reloads the file uploaded within the github repo undoing current changes made in local repo.
+    ~ git reset 
+
+B. to reset a particular file
+    ~ git reset <file_name>
+
+Case 2: Undoing commits - 
+    ~ git reset HEAD~1 
+    i.e. if i have done 3 commits for a file it will go back to the 2nd on doing this.
+
+** To check commits we can use { git log }
+
+Case 3: Undoing a specific commit or many commits
+    ~ git reset <commit_hashcode>
+    i.e. if we write hashcode of 2nd commit, and we are on 5th we will rollback to 2nd commit
+
+Note: if we want to change the code as well with the commits we use --hard 
+    ~ git reset --hard <commit_hashcode>    

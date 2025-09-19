@@ -1,0 +1,48 @@
+Branches: Very useful to work on different features and provides a separate workspace for everyone working 
+          without disturbing others with their work or intruding between other features.
+
+Helps in reducing wait list - i.e. no one has to wait for other devs to complete a feature and then start working
+Instead: they can just clone the repo and start working on it.
+
+Branch commands: 
+1. Check the branch we are working on:
+    ~ git branch
+
+2. Rename branch
+    ~ git branch -M <new_name> 
+
+Checkout commands:
+
+3. Switch between Branches
+    ~ git checkout <branch_name>
+
+4. Create new Branch
+    ~ git checkout -b <branch_name>
+
+5. delete a branch
+    ~ git branch -d <branch_name>
+
+______________________________________________________________________________________________________________________
+
+Merge different branches:
+
+Way 1: Using git codes
+a. git diff <branch_name> - compares two different Branches and all the changes made within files etc.
+   
+   To merge the branches ~
+b. git merge <branch_to_be_merged>
+
+Way 2: Using Pull Request (PR)
+When people works within clones, and want to merge they can give pull Request and the senior developer working on the main branch
+can selectively accept pull requests. 
+
+Merges automatically on approval if, there are no conflicts with the base 
+
+______________________________________________________________________________________________________________________
+
+Merge conflicts:
+If the code changed is conflicting with the base code in main branch
+automatically, the merging is not possible to solve this:
+
+Manually review and keep changes in VS code
+or .. use options given by vs code like agreeing with main branch change or, keeping both the changes. i.e. in main and new branch.
